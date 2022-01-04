@@ -7,13 +7,13 @@
 #
 #                   @Project Name : 王者荣耀壁纸下载
 #
-#                   @File Name    : main.py
+#                   @File Name    : wallpaper.py
 #
 #                   @Programmer   : autofelix
 #
-#                   @Start Date   : 2020/7/30 14:42
+#                   @Start Date   : 2021-01-04 13:14
 #
-#                   @Last Update  : 2020/7/30 14:42
+#                   @Last Update  : 2021-01-04 13:14
 #
 #-------------------------------------------------------------------
 '''
@@ -38,10 +38,12 @@ class HonorOfKings:
         This is a welcome speech
         :return: self
         '''
+        print('\033[1;30;46m')
         print("*" * 50)
         print(' ' * 18 + '王者荣耀壁纸下载')
-        print(' ' * 5 + '作者: autofelix  Date: 2020-05-20 13:14')
+        print(' ' * 5 + '作者: autofelix  Date: 2021-01-04 13:14')
         print("*" * 50)
+        print('\033[0m')
         return self
 
     def run(self):
@@ -56,9 +58,9 @@ class HonorOfKings:
         print('---下载开始...')
         page = 0
         offset = 0
-        total_response = self.request(self.url.format(page)).text
-        total_res = json.loads(total_response)
-        total_page = --int(total_res['iTotalPages'])
+        main_response = self.request(self.url.format(page)).text
+        main_detail = json.loads(main_response)
+        total_page = --int(main_detail['iTotalPages'])
         print('---总共 {} 页...' . format(total_page))
         while True:
             if offset > total_page:
@@ -71,7 +73,7 @@ class HonorOfKings:
                 now += 1
                 hero_name = parse.unquote(item['sProdName']).split('-')[0]
                 hero_name = re.sub(r'[【】:.<>|·@#$%^&() ]', '', hero_name)
-                print('---正在下载第 {} 页 {} 英雄 进度{}/{}...' . format(offset, hero_name, now, len(result["List"])))
+                print('---正在下载第 {} 页 {} 英雄 进度{}/{}...' . format(offset + 1, hero_name, now, len(result["List"])))
                 hero_url = parse.unquote(item['sProdImgNo_{}'.format(str(size))])
                 save_path = self.save_path + '/' + hero_name
                 save_name = save_path + '/' + hero_url.split('/')[-2]
