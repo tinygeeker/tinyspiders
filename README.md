@@ -20,38 +20,9 @@
 </p>
 
 ## 项目结构
-- [顶部导航条](https://github.com/autofelix/front-end-plug-in/blob/main/nprogress/nprogress.js)
-- [陀螺仪](https://github.com/autofelix/front-end-plug-in/blob/main/orienter/orienter.js)
-- [优美的弹窗](https://github.com/autofelix/front-end-plug-in/blob/main/qmessage/message.min.js)
-- [幻灯片轮播图](https://github.com/autofelix/front-end-plug-in/blob/main/swiper/swiper.min.js)
-- [数学公式显示](https://github.com/autofelix/front-end-plug-in/blob/main/MathJax.js)
-- [城市联动](https://github.com/autofelix/front-end-plug-in/blob/main/autofelix.country.data.js)
-- [碰撞检测](https://github.com/autofelix/front-end-plug-in/blob/main/bump.js)
-- [剪切板](https://github.com/autofelix/front-end-plug-in/blob/main/clipboard.min.js)
-- [弹幕](https://github.com/autofelix/front-end-plug-in/blob/main/danmu.js)
-- [推流视频播放](https://github.com/autofelix/front-end-plug-in/blob/main/hls.min.js)
-- [音频引擎处理](https://github.com/autofelix/front-end-plug-in/blob/main/howler.min.js)
-- [Html转换Canvans](https://github.com/autofelix/front-end-plug-in/blob/main/html2canvas.js)
-- [图片预加载](https://github.com/autofelix/front-end-plug-in/blob/main/images.loader.min.js)
-- [懒加载](https://github.com/autofelix/front-end-plug-in/blob/main/jquery.lazyload.js)
-- [Jquery框架](https://github.com/autofelix/front-end-plug-in/blob/main/jquery.min.js)
-- [网页无刷新组件](https://github.com/autofelix/front-end-plug-in/blob/main/jquery.pjax.js)
-- [旋转组件](https://github.com/autofelix/front-end-plug-in/blob/main/jquery.rotate.min.js)
-- [转盘组件](https://github.com/autofelix/front-end-plug-in/blob/main/jquery.wheelOfFortune.js)
-- [cookie操作](https://github.com/autofelix/front-end-plug-in/blob/main/js.cookie.js)
-- [md5加密](https://github.com/autofelix/front-end-plug-in/blob/main/js.cookie.js)
-- [移动端弹窗](https://github.com/autofelix/front-end-plug-in/blob/main/message.js)
-- [日期处理](https://github.com/autofelix/front-end-plug-in/blob/main/message.js)
-- [游戏引擎](https://github.com/autofelix/front-end-plug-in/blob/main/pixi.min.4.8.8.js)
-- [美化代码](https://github.com/autofelix/front-end-plug-in/blob/main/prism.js)
-- [二维码生成器](https://github.com/autofelix/front-end-plug-in/blob/main/qrcode.min.js)
-- [模块化编程](https://github.com/autofelix/front-end-plug-in/blob/main/require.js)
-- [即时通讯](https://github.com/autofelix/front-end-plug-in/blob/main/socket.io.js)
-- [时间显示插件](https://github.com/autofelix/front-end-plug-in/blob/main/timeago.js)
-- [移动端调试工具](https://github.com/autofelix/front-end-plug-in/blob/main/vconsole.min.js)
-- [视频播放](https://github.com/autofelix/front-end-plug-in/blob/main/video.min.js)
-- [vue框架](https://github.com/autofelix/front-end-plug-in/blob/main/vue.min.js)
-- [兼容jq的dom操作](https://github.com/autofelix/front-end-plug-in/blob/main/zepto.min.js)
+- `🌲 wz_wallpaper`
+- - 王者壁纸下载
+
 
 ## 项目预览
 | repository | homepage | stars | last commit | NPM downloads | top language
