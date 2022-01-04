@@ -38,20 +38,20 @@ class HonorOfKings:
         This is a welcome speech
         :return: self
         '''
-        print('\033[1;30;46m')
         print("*" * 50)
         print(' ' * 18 + '王者荣耀壁纸下载')
         print(' ' * 5 + '作者: autofelix  Date: 2021-01-04 13:14')
         print("*" * 50)
-        print('\033[0m')
         return self
 
     def run(self):
         '''
         The program entry
         '''
+        print('\033[1;31;43m')
         print('↓' * 20 + ' 格式选择: ' + '↓' * 20)
         print('1.缩略图 2.1024x768 3.1280x720 4.1280x1024 5.1440x900 6.1920x1080 7.1920x1200 8.1920x1440')
+        print('\033[0m')
         size = input('请输入您想下载的格式序号，默认6：')
         size = size if size and int(size) in [1,2,3,4,5,6,7,8] else 6
 
