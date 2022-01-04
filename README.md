@@ -1,7 +1,7 @@
 # python-spiders
 
 <p align="center">
-  <img width="100" src="https://raw.githubusercontent.com/autofelix/autofelix/4a4114ac3d92fe000cd50a361ef20d0392bd9055/assets/icons/vscode.svg">
+  <img width="100" src="https://autofelix.github.io/autofelix/assets/icons/vscode.svg">
 </p>
 
 ## 项目简介
