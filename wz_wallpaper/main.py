@@ -7,7 +7,7 @@
 #
 #                   @Project Name : 王者荣耀壁纸下载
 #
-#                   @File Name    : wallpaper.py
+#                   @File Name    : main.py
 #
 #                   @Programmer   : autofelix
 #
