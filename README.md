@@ -20,8 +20,8 @@
 </p>
 
 ## 项目结构
-- `🌲 wz_wallpaper`
-  - [王者荣耀壁纸下载](http://element.eleme.io/#/en-US)
+- `🎮 wz_wallpaper`
+  - [王者荣耀壁纸下载](https://github.com/autofelix/python-spiders/blob/main/wz_wallpaper/main.py)
 
 
 ## 项目预览
