@@ -14,7 +14,7 @@
 </p>
 
 ## 项目结构
-- [🎮 王者荣耀壁纸下载](https://github.com/autofelix/python-spiders/blob/main/wz_wallpaper/main.py)
+- [🎮 王者荣耀壁纸下载](https://github.com/autofelix/python-spiders/blob/main/wangzhe_wallpaper/main.py)
 - [🆒 m3u8推流视频下载](https://github.com/autofelix/python-spiders/blob/main/m3u8/main.py)
 
 ## 开始使用
