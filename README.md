@@ -1,6 +1,18 @@
 # python-spiders
 🌈Python网络爬虫实战：王者荣耀超清壁纸、抖音无水印视频、CSDN阅读量、淘宝、京东、网易云、B站、12306、抖音、笔趣阁、漫画小说音乐电影下载等
 
+<p align="center">
+  <a href="https://github.com/vuejs/vue">
+    <img src="https://img.shields.io/badge/python->=3.0-ff69b4.svg" alt="python">
+  </a>
+  <a href="https://github.com/ElemeFE/element">
+    <img src="https://img.shields.io/badge/visual studio code-支持-6bb59a.svg" alt="element-ui">
+  </a>
+  <a href="https://github.com/ElemeFE/element">
+    <img src="https://img.shields.io/badge/pycharm-支持-brightgreen.svg" alt="element-ui">
+  </a>
+</p>
+
 ## 项目结构
 - [🎮 王者荣耀壁纸下载](https://github.com/autofelix/python-spiders/blob/main/wz_wallpaper/main.py)
 - [🆒 m3u8推流视频下载](https://github.com/autofelix/python-spiders/blob/main/m3u8/main.py)
