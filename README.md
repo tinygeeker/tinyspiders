@@ -2,10 +2,8 @@
 🌈Python网络爬虫实战：王者荣耀超清壁纸、抖音无水印视频、CSDN阅读量、淘宝、京东、网易云、B站、12306、抖音、笔趣阁、漫画小说音乐电影下载等
 
 ## 项目结构
-- `🎮 wz_wallpaper`
-  - [王者荣耀壁纸下载](https://github.com/autofelix/python-spiders/blob/main/wz_wallpaper/main.py)
-- `🆒 m3u8`
-  - [m3u8推流视频下载](https://github.com/autofelix/python-spiders/blob/main/m3u8/main.py)
+- [`🎮 王者荣耀壁纸下载`](https://github.com/autofelix/python-spiders/blob/main/wz_wallpaper/main.py)
+- [`🆒 m3u8推流视频下载`](https://github.com/autofelix/python-spiders/blob/main/m3u8/main.py)
 
 ## 项目赞助
 Become a sponsor and get your logo on our README on GitHub with a link to your site. [[Become a sponsor]](https://www.patreon.com/autofelix)
