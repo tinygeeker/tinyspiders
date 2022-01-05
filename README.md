@@ -4,6 +4,8 @@
 ## 项目结构
 - `🎮 wz_wallpaper`
   - [王者荣耀壁纸下载](https://github.com/autofelix/python-spiders/blob/main/wz_wallpaper/main.py)
+- `🆒 m3u8`
+  - [m3u8推流视频下载](https://github.com/autofelix/python-spiders/blob/main/m3u8/main.py)
 
 ## 项目赞助
 Become a sponsor and get your logo on our README on GitHub with a link to your site. [[Become a sponsor]](https://www.patreon.com/autofelix)
@@ -15,15 +17,13 @@ Become a sponsor and get your logo on our README on GitHub with a link to your s
 ```python
 # run a project
 py main.py
+```
 
-# preview
-**************************************************
-                  王者荣耀壁纸下载
-     作者: autofelix  Date: 2021-01-04 13:14
-**************************************************
-↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ 格式选择: ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
-1.缩略图 2.1024x768 3.1280x720 4.1280x1024 5.1440x900 6.1920x1080 7.1920x1200 8.1920x1440
-请输入您想下载的格式序号，默认6：
+`🔗 m3u8/main.py`
+
+```python
+# run a project
+py main.py
 ```
 
 
