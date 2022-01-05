@@ -1,0 +1,4 @@
+imageio
+numpy
+Pillow
+beautifulsoup4
