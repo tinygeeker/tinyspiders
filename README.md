@@ -51,6 +51,6 @@ Modern browsers and Internet Explorer 10+.
 
 ## License
 
-[MIT](https://github.com/autofelix/front-end-plug-in/blob/main/LICENSE)
+[MIT](https://github.com/autofelix/python-spiders/blob/main/LICENSE)
 
 Copyright (c) 2021-present autofelix
