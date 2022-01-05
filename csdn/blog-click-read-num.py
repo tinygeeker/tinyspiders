@@ -74,10 +74,11 @@ class csdn:
         '''
         The program entry
         '''
+        blogerUrl = input('请输入博主主页地址：') or 'https://autofelix.blog.csdn.net'
         while True:
-            t1 = threading.Thread(target=self.start, args=(self.init_driver(),))
-            t2 = threading.Thread(target=self.start, args=(self.init_driver(),))
-            t3 = threading.Thread(target=self.start, args=(self.init_driver(),))
+            t1 = threading.Thread(target=self.start, args=(self.init_driver(), blogerUrl,))
+            t2 = threading.Thread(target=self.start, args=(self.init_driver(), blogerUrl,))
+            t3 = threading.Thread(target=self.start, args=(self.init_driver(), blogerUrl,))
             t1.start()
             t2.start()
             t3.start()
@@ -85,32 +86,22 @@ class csdn:
             t2.join()
             t3.join()
 
-    def start(self, driver):
+    def start(self, driver, url):
         '''
         The program run
         '''
-        driver.get('https://autofelix.blog.csdn.net')
+        driver.get(url)
         time.sleep(3)
-        # driver.find_element_by_class_name('csdn-redpack-close').click()
-
-        # main_window = driver.current_window_handle
-
-        articles = driver.find_elements_by_class_name('csdn-tracking-statistics')[19:23]
+        # 适用于csdn新版主页
+        articles = driver.find_elements_by_class_name('blog-list-box')[0:3]
         try:
             for article in articles:
-                # 点击量
                 article.find_element_by_tag_name('h4').click()
-                # driver.s witch_to.window(driver.window_handles[-1])
-
                 time.sleep(5)
-                # driver.close()
-                # driver.switch_to.window(main_window)
-
         except Exception as e:
             print(e)
         finally:
             driver.quit()
-
 
 if __name__ == "__main__":
     csdn().hello().run()
