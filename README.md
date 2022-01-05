@@ -17,27 +17,6 @@
 - [🎮 王者荣耀壁纸下载](https://github.com/autofelix/python-spiders/blob/main/wangzhe_wallpaper/main.py)
 - [🆒 m3u8推流视频下载](https://github.com/autofelix/python-spiders/blob/main/m3u8/main.py)
 
-## 开始使用
-
-`🔗 wz_wallpaper/main.py`
-
-```python
-# run a project
-py main.py
-```
-
-`🔗 m3u8/main.py`
-
-```python
-# run a project
-py main.py
-```
-
-
-## Changelog
-
-Detailed changes for each release are documented in the [release notes](https://github.com/autofelix/front-end-plug-in/releases).
-
 ## Donate
 
 If you find this project useful, you can buy author a glass of juice :tropical_drink:
