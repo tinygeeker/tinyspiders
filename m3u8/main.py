@@ -11,9 +11,9 @@
 #
 #                   @Programmer   : autofelix
 #
-#                   @Start Date   : 2020/7/30 14:42
+#                   @Start Date   : 2021-01-05 13:14
 #
-#                   @Last Update  : 2020/7/30 14:42
+#                   @Last Update  : 2021-01-05 13:14
 #
 #-------------------------------------------------------------------
 '''
@@ -46,7 +46,7 @@ class M3u8:
         '''
         print("*" * 50)
         print(' ' * 15 + 'm3u8链接下载小助手')
-        print(' ' * 5 + '作者: autofelix  Date: 2020-05-20 13:14')
+        print(' ' * 5 + '作者: autofelix  Date: 2021-01-05 13:14')
         print(' ' * 10 + '适用于非加密 | 加密链接')
         print("*" * 50)
         return self
