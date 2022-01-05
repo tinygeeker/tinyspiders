@@ -56,8 +56,9 @@ class csdn:
         chrome_options = webdriver.ChromeOptions()
 
         # 关掉浏览器左上角的通知提示，如上图
-        chrome_options.add_experimental_option('prefs',
-                                               {'profile.default_content_setting_values': {'notifications': 2}})
+        chrome_options.add_experimental_option('prefs', {
+            'profile.default_content_setting_values': {'notifications': 2}
+        })
 
         # 关闭'chrome正受到自动测试软件的控制'提示
         chrome_options.add_argument('disable-infobars')
