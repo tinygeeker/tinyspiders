@@ -1,8 +1,31 @@
-# -*- coding:UTF-8 -*-
+#!/usr/bin/env python
+# encoding: utf-8
+'''
+#-------------------------------------------------------------------
+#                   CONFIDENTIAL --- CUSTOM STUDIOS
+#-------------------------------------------------------------------
+#
+#                   @Project Name : 百度文库下载助手
+#
+#                   @File Name    : main.py
+#
+#                   @Programmer   : autofelix
+#
+#                   @Start Date   : 2021-01-06 13:14
+#
+#                   @Last Update  : 2021-01-06 13:14
+#
+#-------------------------------------------------------------------
+'''
+import re, time
 from selenium import webdriver
 from bs4 import BeautifulSoup
-import re
-import time
+
+class baiduwenku:
+	def __init__(self):
+		pass
+
+	
 
 if __name__ == '__main__':
 
