@@ -47,13 +47,13 @@ class DouYin:
         This is welcome speech
         :return: self
         '''
-        print("*" * 50)
+        print('*' * 50)
         print(' ' * 15 + '抖音下载小助手')
         print(' ' * 5 + '作者: autofelix  Date: 2020-05-20 13:14')
         print(' ' * 15 + '无水印 | 有水印')
         print(' ' * 12 + '输入用户的sec_uid即可')
         print(' ' * 2 + '用浏览器打开用户分享链接，复制参数中sec_uid')
-        print("*" * 50)
+        print('*' * 50)
         return self
 
     def get_video_urls(self, sec_uid, type_flag='p'):
