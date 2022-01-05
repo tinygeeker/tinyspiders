@@ -17,9 +17,6 @@
 - [🎮 王者荣耀壁纸下载](https://github.com/autofelix/python-spiders/blob/main/wz_wallpaper/main.py)
 - [🆒 m3u8推流视频下载](https://github.com/autofelix/python-spiders/blob/main/m3u8/main.py)
 
-## 项目赞助
-Become a sponsor and get your logo on our README on GitHub with a link to your site. [[Become a sponsor]](https://www.patreon.com/autofelix)
-
 ## 开始使用
 
 `🔗 wz_wallpaper/main.py`
