@@ -14,7 +14,7 @@ color_mask = cv2.imread('back.jpeg')
 
 cloud = WordCloud(
     # 设置字体，不指定就会出现乱码
-    font_path="/Users/caichenyang/Desktop/爬虫尝试/Baoli.ttc",
+    # font_path="/Users/caichenyang/Desktop/爬虫尝试/Baoli.ttc",
     # font_path=path.join(d,'simsun.ttc'),
     # 设置背景色
     background_color='white',
