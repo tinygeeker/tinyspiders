@@ -5,15 +5,15 @@
 #                   CONFIDENTIAL --- CUSTOM STUDIOS
 #-------------------------------------------------------------------
 #
-#                   @Project Name : 博客之星点赞
+#                   @Project Name : 博客之星点赞小助手
 #
-#                   @File Name    : main.py
+#                   @File Name    : blog_star_like.py
 #
 #                   @Programmer   : autofelix
 #
-#                   @Start Date   : 2021/12/30 14:42
+#                   @Start Date   : 2022/01/01 13:14
 #
-#                   @Last Update  : 2021/12/30 14:42
+#                   @Last Update  : 2022/01/01 13:14
 #
 #-------------------------------------------------------------------
 '''
@@ -32,8 +32,8 @@ class csdn:
 
     def hello(self):
         print("*" * 50)
-        print(' ' * 15 + 'csdn博客之星点赞脚本')
-        print(' ' * 5 + 'Author: autofelix  Date: 2021-12-30 14:42')
+        print(' ' * 15 + '博客之星点赞小助手')
+        print(' ' * 5 + 'Author: autofelix  Date: 2022-01-01 14:42')
         print("*" * 50)
         return self
 
@@ -68,6 +68,7 @@ class csdn:
         driver.find_element_by_xpath('//*[@id="floor-user-content_562"]/div/div[3]/div[1]/div[1]/div/div[1]/div[2]/div[3]/div[2]/span[1]/i').click()
         driver.find_element_by_xpath('//*[@id="floor-user-content_562"]/div/div[3]/div[1]/div[1]/div/div[2]/div[1]/div[2]/a').click()
         print('访问结束：' + driver.current_url)
+        # 循环点赞
         self.start(driver)
 
 if __name__ == "__main__":
