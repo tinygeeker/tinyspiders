@@ -17,6 +17,8 @@
 - [王者荣耀壁纸下载](https://github.com/autofelix/python-spiders/blob/main/wangzhe_wallpaper/main.py)
 - [M3U8推流视频下载](https://github.com/autofelix/python-spiders/blob/main/m3u8/main.py)
 - [CSDN增加阅读量点击量](https://github.com/autofelix/python-spiders/blob/main/csdn/blog-click-read-num.py)
+- [导出2021博客之星给你点赞的用户](https://github.com/autofelix/python-spiders/blob/main/csdn/blog-star-user.py)
+- [博客之星点赞小助手](https://github.com/autofelix/python-spiders/blob/main/csdn/blog-star-like.py)
 
 ## Donate
 
