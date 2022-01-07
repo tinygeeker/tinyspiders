@@ -11,9 +11,9 @@
 #                                                                   
 #                   @Programmer   : autofelix                           
 #                                                                     
-#                   @Start Date   : 2021-01-05 13:14
+#                   @Start Date   : 2022/01/05 13:14
 #                                                                   
-#                   @Last Update  : 2021-01-05 13:14
+#                   @Last Update  : 2022/01/05 13:14
 #                                                                   
 #-------------------------------------------------------------------
 '''
@@ -45,7 +45,7 @@ class csdn:
         '''
         print('*' * 50)
         print(' ' * 15 + 'csdn线程阅读量点击量阅读量')
-        print(' ' * 5 + 'Author: autofelix  Date: 2021-01-05 13:14')
+        print(' ' * 5 + 'Author: autofelix  Date: 2022-01-05 13:14')
         print('*' * 50)
         return self
 
