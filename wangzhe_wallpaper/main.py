@@ -11,9 +11,9 @@
 #
 #                   @Programmer   : autofelix
 #
-#                   @Start Date   : 2021-01-04 13:14
+#                   @Start Date   : 2022/01/04 13:14
 #
-#                   @Last Update  : 2021-01-04 13:14
+#                   @Last Update  : 2022/01/04 13:14
 #
 #-------------------------------------------------------------------
 '''
@@ -40,7 +40,7 @@ class HonorOfKings:
         '''
         print("*" * 50)
         print(' ' * 18 + '王者荣耀壁纸下载')
-        print(' ' * 5 + '作者: autofelix  Date: 2021-01-04 13:14')
+        print(' ' * 5 + '作者: autofelix  Date: 2022-01-04 13:14')
         print("*" * 50)
         return self
 
