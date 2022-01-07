@@ -74,6 +74,9 @@ class csdn:
         return blog_data
 
     def run(self):
+        '''
+        The program entry
+        '''
         sg.change_look_and_feel('Python')
         window_title = '2021博客之星五星评分数据导出'
         window = sg.Window(window_title, self.layout)
