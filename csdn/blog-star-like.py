@@ -22,6 +22,12 @@ from selenium import webdriver
 from selenium.webdriver import ActionChains
 
 class csdn:
+    '''
+     This is a main Class, the file contains all documents.
+     One document contains paragraphs that have several sentences
+     It loads the original file and converts the original file to new content
+     Then the new content will be saved by this class
+    '''
     def __init__(self):
         self.userAgent = [
             'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36', #谷歌
@@ -31,13 +37,21 @@ class csdn:
         ]
 
     def hello(self):
-        print("*" * 50)
+        '''
+        This is a welcome speech
+        :return: self
+        '''
+        print('*' * 50)
         print(' ' * 15 + '博客之星点赞小助手')
         print(' ' * 5 + 'Author: autofelix  Date: 2022-01-01 14:42')
-        print("*" * 50)
+        print('*' * 50)
         return self
 
     def init_driver(self):
+        '''
+        Init driver setting
+        :return: driver
+        '''
         chrome_options = webdriver.ChromeOptions()
 
         # 关掉浏览器左上角的通知提示，如上图
@@ -55,6 +69,9 @@ class csdn:
         return webdriver.Chrome(options=chrome_options)
 
     def run(self):
+        '''
+        The program entry
+        '''
         driver = self.init_driver()
         print('-----请先手动登录-----')
         driver.get('https://passport.csdn.net/newlogin')
@@ -63,6 +80,9 @@ class csdn:
         self.start(driver)
 
     def start(self, driver):
+        '''
+        The program start
+        '''
         time.sleep(3)
         ActionChains(driver).move_to_element(driver.find_element_by_xpath('//*[@id="floor-user-content_562"]/div/div[3]/div[1]/div[1]/div/div[2]/div[2]')).perform()
         driver.find_element_by_xpath('//*[@id="floor-user-content_562"]/div/div[3]/div[1]/div[1]/div/div[1]/div[2]/div[3]/div[2]/span[1]/i').click()
