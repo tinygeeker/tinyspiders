@@ -15,6 +15,7 @@
 - [博客之星点赞小助手](https://github.com/autofelix/python-spiders/blob/main/csdn/blog-star-like.py)
 - [超清美女图片下载](https://github.com/autofelix/python-spiders/blob/main/xiuren/main.py)
 - [文件下载小助手](https://github.com/autofelix/python-spiders/blob/main/downloader.py)
+- [获取可用代理助手](https://github.com/autofelix/python-spiders/blob/main/proxy.py)
 
 ## 项目贡献
 
