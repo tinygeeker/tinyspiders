@@ -21,7 +21,7 @@ import os, time, requests, json, re
 from retrying import retry
 from urllib import parse
 
-class HonorOfKings:
+class wangzheWallpaper:
     '''
      This is a main Class, the file contains all documents.
      One document contains paragraphs that have several sentences
@@ -99,4 +99,4 @@ class HonorOfKings:
         return response
 
 if __name__ == "__main__":
-    HonorOfKings().hello().run()
+    wangzheWallpaper().hello().run()
