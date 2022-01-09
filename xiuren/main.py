@@ -1,106 +1,118 @@
-# encoding = utf-8
-import concurrent
-import os
+#!/usr/bin/env python
+# encoding: utf-8
+'''
+#-------------------------------------------------------------------
+#                   CONFIDENTIAL --- CUSTOM STUDIOS
+#-------------------------------------------------------------------
+#
+#                   @Project Name : 美女图片下载
+#
+#                   @File Name    : main.py
+#
+#                   @Programmer   : autofelix
+#
+#                   @Start Date   : 2022/01/09 13:14
+#
+#                   @Last Update  : 2022/01/09 13:14
+#
+#-------------------------------------------------------------------
+'''
+import concurrent, os, requests
+from retrying import retry
 from concurrent.futures import ThreadPoolExecutor
-import requests
 from bs4 import BeautifulSoup
 
+class xiuren:
+    '''
+     This is a main Class, the file contains all documents.
+     One document contains paragraphs that have several sentences
+     It loads the original file and converts the original file to new content
+     Then the new content will be saved by this class
+    '''
+    def __init__(self):
+        self.spider_url = 'https://www.tutu555.net/a/cn/xiuren'
+        self.total_page = 5
 
-def header(referer):
+    def hello(self):
+        '''
+        This is a welcome speech
+        :return: self
+        '''
+        print('*' * 50)
+        print(' ' * 15 + '美女图片下载')
+        print(' ' * 5 + 'Author: autofelix  Date: 2022-01-09 13:14')
+        print('*' * 50)
+        return self
 
-    headers = {
-        'Host': 'i.meizitu.net',
-        'Pragma': 'no-cache',
-        'Accept-Encoding': 'gzip, deflate',
-        'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6',
-        'Cache-Control': 'no-cache',
-        'Connection': 'keep-alive',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
-        'Accept': 'image/webp,image/apng,image/*,*/*;q=0.8',
-        'Referer': '{}'.format(referer),
-    }
+    def run(self):
+        list_page_urls = self.get_spider_info()
+        with concurrent.futures.ProcessPoolExecutor(max_workers=5) as exector:
+            for url in list_page_urls:
+                exector.submit(download, url)
 
-    return headers
-
-
-def request_page(url):
-    try:
-        response = requests.get(url)
-        if response.status_code == 200:
-            response.encoding = 'gbk'
-            return response.text
-    except requests.RequestException:
-        return None
+    @retry(stop_max_attempt_number=3)
+    def request(self, url):
+        '''
+        Send a request
+        :param url: the url of request
+        :return: the text of request
+        '''
+        response = requests.get(url, timeout=10)
+        assert response.status_code == 200
+        response.encoding = 'gbk'
+        return response.text
 
 
-def get_page_urls():
-    urls = []
-    for i in range(1, 3):
-        baseurl = 'https://www.tutu555.net/a/cn/xiuren/list_6_{}.html'.format(i)
-        html = request_page(baseurl)
+    def get_spider_info(self):
+        '''
+        Get the info of spider
+        :return: list
+        '''
+        info = []
+        for i in range(1, self.total_page):
+            url = '{}/list_6_{}.html'.format(self.spider_url, i)
+            spider_html = self.request(url)
+            soup = BeautifulSoup(spider_html, 'lxml')
+            elements = soup.find(class_='clearfix').find_all('li')
+            for item in elements:
+                url = item.find('a').get('href')
+                title = item.find('a').find('span').string
+                info.append('{}__@@__{}' . format(title, url))
+        return info
+
+    def download_Pic(self, title, image_list):
+        os.mkdir(title)
+        j = 1
+        for item in image_list:
+            filename = '%s/%s.jpg' % (title, str(j))
+            print('正在下载｜%s : NO.%s' % (title, str(j)))
+            with open(filename, 'wb') as f:
+                img = requests.get(item).content
+                f.write(img)
+            j += 1
+
+    def download(self, url):
+        url_str = url.split('__@@__')
+        title = url_str[0]
+        html = request_page(res[-1])
         soup = BeautifulSoup(html, 'lxml')
-        elements = soup.find(class_='clearfix').find_all('li')
-        for item in elements:
-            url = item.find('a').get('href')
-            title = item.find('a').find('span').string
-            print('%s__@@__%s' % (title, url))
-            urls.append('{}__@@__{}' . format(title, url))
+        total = soup.find(class_='page').find_all('a')[-2].string
+        print(title, total)
+        image_list = []
 
-    return urls
+        for i in range(int(total)):
+            page = i + 1
+            page_url = f'_{page}.html'.join(res[-1].split('.html')) if page > 1 else res[-1]
+            html = request_page(page_url)
+            soup = BeautifulSoup(html, 'lxml')
+            img_url = soup.find(class_='content').find_all('img')
+            for item in img_url:
+                im_url = item.get('src')
+                print(im_url)
+                image_list.append(im_url)
 
-
-def download_Pic(title, image_list):
-    # 新建文件夹
-    os.mkdir(title)
-    j = 1
-    # 下载图片
-    for item in image_list:
-        filename = '%s/%s.jpg' % (title, str(j))
-        print('downloading....%s : NO.%s' % (title, str(j)))
-        with open(filename, 'wb') as f:
-            img = requests.get(item).content
-            f.write(img)
-        j += 1
-
-def download(url):
-    # print('start')
-    res = url.split('__@@__')
-    # print(res[0], res[-1])
-    html = request_page(res[-1])
-    soup = BeautifulSoup(html, 'lxml')
-    total = soup.find(class_='page').find_all('a')[-2].string
-    # print(total)
-    title = res[0]
-    print(title, total)
-    image_list = []
-
-    for i in range(int(total)):
-        page = i + 1
-        page_url = f'_{page}.html'.join(res[-1].split('.html')) if page > 1 else res[-1]
-        html = request_page(page_url)
-        soup = BeautifulSoup(html, 'lxml')
-        img_url = soup.find(class_='content').find_all('img')
-        for item in img_url:
-            im_url = item.get('src')
-            print(im_url)
-            image_list.append(im_url)
-
-    download_Pic(title, image_list)
-
-
-def download_all_images(list_page_urls):
-    # 获取每一个详情妹纸
-    # works = len(list_page_urls)
-    with concurrent.futures.ProcessPoolExecutor(max_workers=5) as exector:
-        for url in list_page_urls:
-            exector.submit(download, url)
+        download_Pic(title, image_list)
 
 
 if __name__ == '__main__':
-    # 获取每一页的链接和名称
-    # for i in range(1,4):
-    #     print(i)
-    # print('_3.html'.join('https://www.tutu555.net/a/cn/xiuren/2022/0101/41919.html'.split('.html')))
-    list_page_urls = get_page_urls()
-    # print(list_page_urls)
-    download_all_images(list_page_urls)
+    xiuren().hello().run()
