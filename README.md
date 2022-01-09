@@ -13,6 +13,7 @@
 - [CSDN增加阅读量点击量](https://github.com/autofelix/python-spiders/blob/main/csdn/blog-click-read-num.py)
 - [导出2021博客之星给你点赞的用户](https://github.com/autofelix/python-spiders/blob/main/csdn/blog-star-user.py)
 - [博客之星点赞小助手](https://github.com/autofelix/python-spiders/blob/main/csdn/blog-star-like.py)
+- [美女图片下载](https://github.com/autofelix/python-spiders/blob/main/xiuren/main.py)
 
 ## 项目贡献
 
