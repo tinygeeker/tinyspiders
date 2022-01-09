@@ -1,7 +1,22 @@
-# -*-coding:utf-8 -*-
-# Author:Jack Cui
-# Website:http://cuijiahua.com
-# Date:2018-7-7
+#!/usr/bin/env python
+# encoding: utf-8
+'''
+#-------------------------------------------------------------------
+#                   CONFIDENTIAL --- CUSTOM STUDIOS
+#-------------------------------------------------------------------
+#
+#                   @Project Name : 获取可用代理助手
+#
+#                   @File Name    : main.py
+#
+#                   @Programmer   : autofelix
+#
+#                   @Start Date   : 2022/01/09 13:14
+#
+#                   @Last Update  : 2022/01/09 13:14
+#
+#-------------------------------------------------------------------
+'''
 import os
 import re
 import sys

@@ -1,4 +1,22 @@
-# -*- coding:utf-8 -*-
+#!/usr/bin/env python
+# encoding: utf-8
+'''
+#-------------------------------------------------------------------
+#                   CONFIDENTIAL --- CUSTOM STUDIOS
+#-------------------------------------------------------------------
+#
+#                   @Project Name : 获取可用代理助手
+#
+#                   @File Name    : main.py
+#
+#                   @Programmer   : autofelix
+#
+#                   @Start Date   : 2022/01/09 13:14
+#
+#                   @Last Update  : 2022/01/09 13:14
+#
+#-------------------------------------------------------------------
+'''
 import requests, hashlib, sys, click, re, base64, binascii, json, os
 from Crypto.Cipher import AES
 from http import cookiejar

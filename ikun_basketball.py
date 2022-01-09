@@ -1,6 +1,22 @@
-# coding=utf-8
-
-# 最新版的selenium(4.x.x)已经不支持PhantomJS。如要用PhantomJS，可用旧版本selenium。如pip install selenium==3.8.0。
+#!/usr/bin/env python
+# encoding: utf-8
+'''
+#-------------------------------------------------------------------
+#                   CONFIDENTIAL --- CUSTOM STUDIOS
+#-------------------------------------------------------------------
+#
+#                   @Project Name : 获取可用代理助手
+#
+#                   @File Name    : main.py
+#
+#                   @Programmer   : autofelix
+#
+#                   @Start Date   : 2022/01/09 13:14
+#
+#                   @Last Update  : 2022/01/09 13:14
+#
+#-------------------------------------------------------------------
+'''
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.by import By
