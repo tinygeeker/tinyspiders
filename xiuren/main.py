@@ -40,7 +40,8 @@ class xiuren:
         '''
         print('*' * 50)
         print(' ' * 20 + '美女图片下载')
-        print(' ' * 5 + 'Author: autofelix  Date: 2022-01-09 13:14')
+        print(' ' * 5 + '作者: autofelix  Date: 2022-01-09 13:14')
+        print(' ' * 5 + '主页: https://autofelix.blog.csdn.net')
         print('*' * 50)
         return self
 
