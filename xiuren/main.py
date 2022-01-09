@@ -31,7 +31,7 @@ class xiuren:
     '''
     def __init__(self):
         self.spider_url = 'https://www.tutu555.net/a/cn/xiuren'
-        self.total_page = 5
+        self.total_page = 3
 
     def hello(self):
         '''
@@ -39,16 +39,19 @@ class xiuren:
         :return: self
         '''
         print('*' * 50)
-        print(' ' * 15 + '美女图片下载')
+        print(' ' * 20 + '美女图片下载')
         print(' ' * 5 + 'Author: autofelix  Date: 2022-01-09 13:14')
         print('*' * 50)
         return self
 
     def run(self):
+        '''
+        program entry
+        '''
         list_page_urls = self.get_spider_info()
         with concurrent.futures.ProcessPoolExecutor(max_workers=5) as exector:
             for url in list_page_urls:
-                exector.submit(download, url)
+                exector.submit(self.download, url)
 
     @retry(stop_max_attempt_number=3)
     def request(self, url):
@@ -70,6 +73,7 @@ class xiuren:
         '''
         info = []
         for i in range(1, self.total_page):
+            print('正在采集第{}页的数据...' . format(i))
             url = '{}/list_6_{}.html'.format(self.spider_url, i)
             spider_html = self.request(url)
             soup = BeautifulSoup(spider_html, 'lxml')
@@ -80,7 +84,10 @@ class xiuren:
                 info.append('{}__@@__{}' . format(title, url))
         return info
 
-    def download_Pic(self, title, image_list):
+    def download_picture(self, title, image_list):
+        '''
+        Download picture
+        '''
         os.mkdir(title)
         j = 1
         for item in image_list:
@@ -91,27 +98,28 @@ class xiuren:
                 f.write(img)
             j += 1
 
-    def download(self, url):
-        url_str = url.split('__@@__')
+    def download(self, info):
+        '''
+        Get the info of images
+        :return: list
+        '''
+        url_str = info.split('__@@__')
         title = url_str[0]
-        html = request_page(res[-1])
-        soup = BeautifulSoup(html, 'lxml')
+        url = url_str[-1]
+        spider_html = self.request(url)
+        soup = BeautifulSoup(spider_html, 'lxml')
         total = soup.find(class_='page').find_all('a')[-2].string
-        print(title, total)
         image_list = []
-
         for i in range(int(total)):
             page = i + 1
-            page_url = f'_{page}.html'.join(res[-1].split('.html')) if page > 1 else res[-1]
-            html = request_page(page_url)
+            page_url = f'_{page}.html'.join(url.split('.html')) if page > 1 else url
+            html = self.request(page_url)
             soup = BeautifulSoup(html, 'lxml')
             img_url = soup.find(class_='content').find_all('img')
             for item in img_url:
                 im_url = item.get('src')
-                print(im_url)
                 image_list.append(im_url)
-
-        download_Pic(title, image_list)
+        self.download_picture(title, image_list)
 
 
 if __name__ == '__main__':
