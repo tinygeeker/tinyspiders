@@ -3,8 +3,10 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/python->=3.0-ff69b4.svg" alt="python">
-  <img src="https://img.shields.io/badge/pip->=3.0-6bb59a.svg" alt="pip">
-  <img src="https://img.shields.io/badge/pycharm->=3.0-brightgreen.svg" alt="pycharm">
+  <img src="https://img.shields.io/badge/lxml->=4.6.3-6bb59a.svg" alt="lxml">
+  <img src="https://img.shields.io/badge/requests->=2.20.0-brightgreen.svg" alt="requests">
+  <img src="https://img.shields.io/badge/Pillow->=6.2.2-blue.svg" alt="Pillow">
+  <img src="https://img.shields.io/badge/beautifulsoup4->=4.6.02-e65a65.svg" alt="Pillow">
 </p>
 
 ## 项目结构
