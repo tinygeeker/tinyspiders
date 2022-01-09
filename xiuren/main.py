@@ -31,7 +31,7 @@ class xiuren:
     '''
     def __init__(self):
         self.spider_url = 'https://www.tutu555.net/a/cn/xiuren'
-        self.total_page = 3
+        self.total_page = 151
 
     def hello(self):
         '''
