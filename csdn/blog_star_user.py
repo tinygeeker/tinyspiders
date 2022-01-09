@@ -46,7 +46,8 @@ class csdn:
         '''
         print('*' * 50)
         print(' ' * 10 + '导出2021博客之星给你点赞的用户')
-        print(' ' * 5 + 'Author: autofelix  Date: 2022-01-08 14:42')
+        print(' ' * 5 + '作者: autofelix  Date: 2022-01-08 14:42')
+        print(' ' * 5 + '主页: https://autofelix.blog.csdn.net')
         print('*' * 50)
         return self
 
