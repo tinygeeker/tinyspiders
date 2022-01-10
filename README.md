@@ -22,6 +22,7 @@
 - [豆瓣最受欢迎的250部电影](https://github.com/autofelix/python-spiders/blob/main/douban_top_250_movies.py)
 - [下载《笔趣看》网小说](https://github.com/autofelix/python-spiders/blob/main/biqukan.py)
 - [上市公司股票财务下载助手](https://github.com/autofelix/python-spiders/blob/main/financial.py)
+- [爬取蔡徐坤打篮球相关视频](https://github.com/autofelix/python-spiders/blob/main/ikun_basketball.py)
 
 ## 项目贡献
 
