@@ -5,39 +5,28 @@
 #                   CONFIDENTIAL --- CUSTOM STUDIOS
 #-------------------------------------------------------------------
 #
-#                   @Project Name : 获取可用代理助手
+#                   @Project Name : 上市公司股票财务下载助手
 #
 #                   @File Name    : main.py
 #
 #                   @Programmer   : autofelix
 #
-#                   @Start Date   : 2022/01/09 13:14
+#                   @Start Date   : 2022/01/10 13:14
 #
-#                   @Last Update  : 2022/01/09 13:14
+#                   @Last Update  : 2022/01/10 13:14
 #
 #-------------------------------------------------------------------
 '''
-import sys
-import pymysql
-import requests
-import json
-import re
+import sys, re, pymysql, requests
 from bs4 import BeautifulSoup
 
-"""
-类说明:获取财务数据
-
-Author:
-	Jack Cui
-Blog:
-	http://blog.csdn.net/c406495762
-Zhihu:
-	https://www.zhihu.com/people/Jack--Cui/
-Modify:
-	2017-08-31
-"""
-class FinancialData():
-
+class financial():
+	'''
+	 This is a main Class, the file contains all documents.
+	 One document contains paragraphs that have several sentences
+	 It loads the original file and converts the original file to new content
+	 Then the new content will be saved by this class
+	'''
 	def __init__(self):
 		#服务器域名
 		self.server = 'http://quotes.money.163.com/'
@@ -73,27 +62,24 @@ class FinancialData():
 			'Accept-Encoding': 'gzip, deflate',
 			'Accept-Language': 'zh-CN,zh;q=0.8',
 			'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.109 Safari/537.36'}
-	
-	"""
-	函数说明:获取股票页面信息
 
-	Author:
-		Jack Cui
-	Parameters:
-	    url - 股票财务数据界面地址
-	Returns:
-	    name - 股票名
-	    table_name_list - 财务报表名称
-	    table_date_list - 财务报表年限
-	    url_list - 财务报表查询连接
-	Blog:
-		http://blog.csdn.net/c406495762
-	Zhihu:
-		https://www.zhihu.com/people/Jack--Cui/
-	Modify:
-		2017-08-31
-	"""
-	def get_informations(self, url):
+	def hello(self):
+		'''
+		This is a welcome speech
+		:return: self
+		'''
+		print('*' * 50)
+		print(' ' * 10 + '上市公司股票财务下载助手')
+		print(' ' * 5 + '作者: autofelix  Date: 2022-01-10 13:14')
+		print(' ' * 5 + '主页: https://autofelix.blog.csdn.net')
+		print('*' * 50)
+		return self
+
+	def get_information(self, url):
+		'''
+		get the info of page
+		:return: str
+		'''
 		req = requests.get(url = url, headers = self.headers)
 		req.encoding = 'utf-8'
 		html = req.text
@@ -122,28 +108,19 @@ class FinancialData():
 				each_date_list = []
 		return name,table_name_list,table_date_list,url_list
 
-	"""
-	函数说明:财务报表入库
 
-	Author:
-		Jack Cui
-	Parameters:
-	    name - 股票名
-	    table_name_list - 财务报表名称
-	    table_date_list - 财务报表年限
-	    url_list - 财务报表查询连接
-	Returns:
-		无
-	Blog:
-		http://blog.csdn.net/c406495762
-	Zhihu:
-		https://www.zhihu.com/people/Jack--Cui/
-	Modify:
-		2017-08-31
-	"""
 	def insert_tables(self, name, table_name_list,table_date_list, url_list):
+		'''
+		Insert the info to database
+		'''
 		#打开数据库连接:host-连接主机地址,port-端口号,user-用户名,passwd-用户密码,db-数据库名,charset-编码
-		conn = pymysql.connect(host='127.0.0.1', port=3306, user='root', passwd='yourpasswd',db='financialdata',charset='utf8')
+		conn = pymysql.connect(
+			host='127.0.0.1',
+			port=3306, user='root',
+			passwd='yourpasswd',
+			db='financialdata',
+			charset='utf8'
+		)
 		#使用cursor()方法获取操作游标
 		cursor = conn.cursor()  
 		#插入信息
@@ -192,20 +169,13 @@ class FinancialData():
 		cursor.close()  
 		conn.close()
 
-if __name__ == '__main__':
-	print('*' * 100)
-	print('\t\t\t\t\t财务数据下载助手\n')
-	print('作者:Jack-Cui\n')
-	print('About Me:\n')
-	print('  知乎:https://www.zhihu.com/people/Jack--Cui')
-	print('  Blog:http://blog.csdn.net/c406495762')
-	print('  Gihub:https://github.com/Jack-Cherish\n')
-	print('*' * 100)
-	fd = FinancialData()
-	#上市股票地址
-	code = input('请输入股票代码:')
+	def run(self):
+		code = input('请输入上市股票代码:')
+		name, table_name_list, table_date_list, url_list = self.get_information(self.cwnb + code + '.html')
+		print('\n  %s:(%s)财务数据下载中！\n' % (name, code))
+		self.insert_tables(name, table_name_list, table_date_list, url_list)
+		print('\n  %s:(%s)财务数据下载完成！' % (name, code))
 
-	name,table_name_list,table_date_list,url_list = fd.get_informations(fd.cwnb + code + '.html')
-	print('\n  %s:(%s)财务数据下载中！\n' % (name,code))
-	fd.insert_tables(name,table_name_list,table_date_list,url_list)
-	print('\n  %s:(%s)财务数据下载完成！' % (name,code))
+
+if __name__ == '__main__':
+	financial().hello().run()
