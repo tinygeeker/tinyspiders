@@ -1,4 +1,0 @@
-lxml==4.6.3
-requests==2.20.0
-Pillow>=6.2.2
-beautifulsoup4==4.6.0
