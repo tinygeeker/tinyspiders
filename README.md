@@ -20,6 +20,7 @@
 - [获取可用代理助手](https://github.com/autofelix/python-spiders/blob/main/proxy.py)
 - [获取当当网五星好评前五百的书籍](https://github.com/autofelix/python-spiders/blob/main/dangdang_top_500.py)
 - [豆瓣最受欢迎的250部电影](https://github.com/autofelix/python-spiders/blob/main/douban_top_250_movies.py)
+-[下载《笔趣看》网小说](https://github.com/autofelix/python-spiders/blob/main/biqukan.py)
 
 ## 项目贡献
 
