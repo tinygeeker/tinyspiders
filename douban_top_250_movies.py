@@ -97,7 +97,6 @@ class douban:
             self.row += 1
         book.save(u'豆瓣最受欢迎的250部电影.xlsx')
 
-
     def run(self):
         '''
         program entry
