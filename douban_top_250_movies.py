@@ -33,6 +33,7 @@ class douban:
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
                           'Chrome/88.0.4324.146 Safari/537.36',
         }
+        self.book = xlwt.Workbook(encoding='utf-8', style_compression=0)
         self.row = 1
 
     def hello(self):
@@ -58,20 +59,10 @@ class douban:
         except requests.RequestException:
             return None
 
-    def save_to_excel(self, soup):
+    def save_to_excel(self, sheet, soup):
         '''
         Save info to excel
         '''
-        book = xlwt.Workbook(encoding='utf-8', style_compression=0)
-
-        sheet = book.add_sheet('豆瓣电影Top250', cell_overwrite_ok=True)
-        sheet.write(0, 0, '名称')
-        sheet.write(0, 1, '图片')
-        sheet.write(0, 2, '排名')
-        sheet.write(0, 3, '评分')
-        sheet.write(0, 4, '作者')
-        sheet.write(0, 5, '简介')
-
         list = soup.find(class_='grid_view').find_all('li')
 
         for item in list:
@@ -95,17 +86,26 @@ class douban:
             sheet.write(self.row, 5, item_intro)
 
             self.row += 1
-        book.save(u'豆瓣最受欢迎的250部电影.xlsx')
 
     def run(self):
         '''
         program entry
         '''
+        sheet = self.book.add_sheet('豆瓣电影Top250', cell_overwrite_ok=True)
+        sheet.write(0, 0, '名称')
+        sheet.write(0, 1, '图片')
+        sheet.write(0, 2, '排名')
+        sheet.write(0, 3, '评分')
+        sheet.write(0, 4, '作者')
+        sheet.write(0, 5, '简介')
+
         for i in range(0, 10):
             target_url = self.url + '?start=' + str(i * 25) + '&filter='
             html = self.request(target_url)
             soup = BeautifulSoup(html, 'lxml')
-            self.save_to_excel(soup)
+            self.save_to_excel(sheet, soup)
+
+        self.book.save(u'豆瓣最受欢迎的250部电影.xlsx')
 
 if __name__ == '__main__':
     douban().hello().run()
