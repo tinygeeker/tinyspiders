@@ -5,28 +5,25 @@
 #                   CONFIDENTIAL --- CUSTOM STUDIOS
 #-------------------------------------------------------------------
 #
-#                   @Project Name : 获取可用代理助手
+#                   @Project Name : 百度文库下载助手
 #
-#                   @File Name    : main.py
+#                   @File Name    : baiduwenku.py
 #
 #                   @Programmer   : autofelix
 #
-#                   @Start Date   : 2022/01/09 13:14
+#                   @Start Date   : 2022/01/11 13:14
 #
-#                   @Last Update  : 2022/01/09 13:14
+#                   @Last Update  : 2022/01/11 13:14
 #
 #-------------------------------------------------------------------
 '''
-import requests
-import re
-import json
-import os
+import requests, re, json, os
 
 session = requests.session()
 
 
 def fetch_url(url):
-    return session.get(url).content.decode('gbk')
+    return session.get(url).content.decode('utf-8')
 
 
 def get_doc_id(url):
