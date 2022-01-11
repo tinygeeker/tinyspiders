@@ -24,7 +24,7 @@
 - [上市公司股票财务下载助手](https://github.com/autofelix/python-spiders/blob/main/financial.py)
 - [爬取蔡徐坤打篮球相关视频](https://github.com/autofelix/python-spiders/blob/main/ikun_basketball.py)
 - [获取指定用户的微信数据](https://github.com/autofelix/python-spiders/blob/main/wechat.py)
-- [获取指定用户的微信数据](https://github.com/autofelix/python-spiders/blob/main/wechat_public_account.py)
+- [获取微信公众平台原创文章](https://github.com/autofelix/python-spiders/blob/main/wechat_public_account.py)
 
 ## 项目贡献
 
