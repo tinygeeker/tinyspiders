@@ -5,27 +5,21 @@
 #                   CONFIDENTIAL --- CUSTOM STUDIOS
 #-------------------------------------------------------------------
 #
-#                   @Project Name : 获取可用代理助手
+#                   @Project Name : 验证码验证
 #
-#                   @File Name    : main.py
+#                   @File Name    : geetest.py
 #
 #                   @Programmer   : autofelix
 #
-#                   @Start Date   : 2022/01/09 13:14
+#                   @Start Date   : 2022/01/11 13:14
 #
-#                   @Last Update  : 2022/01/09 13:14
+#                   @Last Update  : 2022/01/11 13:14
 #
 #-------------------------------------------------------------------
 '''
-import random
-import re
-import time
-# 图片转换
-import base64
+import re, random, time, base64
 from urllib.request import urlretrieve
-
 from bs4 import BeautifulSoup
-
 import PIL.Image as image
 from selenium import webdriver
 from selenium.webdriver import ActionChains
@@ -94,7 +88,7 @@ def save_full_bg(driver, full_bg_path="fbg.png", full_bg_class="geetest_canvas_f
 class Crack():
 	def __init__(self,keyword):
 		self.url = '*'
-		self.browser = webdriver.Chrome('D:\\chromedriver.exe')
+		self.browser = webdriver.Chrome()
 		self.wait = WebDriverWait(self.browser, 100)
 		self.keyword = keyword
 		self.BORDER = 6
