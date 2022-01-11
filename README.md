@@ -25,6 +25,7 @@
 - [爬取蔡徐坤打篮球相关视频](https://github.com/autofelix/python-spiders/blob/main/ikun_basketball.py)
 - [获取指定用户的微信数据](https://github.com/autofelix/python-spiders/blob/main/wechat.py)
 - [获取微信公众平台原创文章](https://github.com/autofelix/python-spiders/blob/main/wechat_public_account.py)
+- [破解哔哩哔哩登录滑动验证码](https://github.com/autofelix/python-spiders/blob/main/bilibili_captcha_crack.py)
 
 ## 项目贡献
 
