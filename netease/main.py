@@ -5,27 +5,21 @@
 #                   CONFIDENTIAL --- CUSTOM STUDIOS
 #-------------------------------------------------------------------
 #
-#                   @Project Name : 获取可用代理助手
+#                   @Project Name : 网易云音乐下载
 #
 #                   @File Name    : main.py
 #
 #                   @Programmer   : autofelix
 #
-#                   @Start Date   : 2022/01/09 13:14
+#                   @Start Date   : 2022/01/15 13:14
 #
-#                   @Last Update  : 2022/01/09 13:14
+#                   @Last Update  : 2022/01/15 13:14
 #
 #-------------------------------------------------------------------
 '''
 import requests, hashlib, sys, click, re, base64, binascii, json, os
 from Crypto.Cipher import AES
 from http import cookiejar
-
-"""
-Website:http://cuijiahua.com
-Author:Jack Cui
-Refer:https://github.com/darknessomi/musicbox
-"""
 
 class Encrypyed():
 	"""
