@@ -5,9 +5,9 @@
 #                   CONFIDENTIAL --- CUSTOM STUDIOS
 #-------------------------------------------------------------------
 #
-#                   @Project Name : 获取可用代理助手
+#                   @Project Name : 淘宝登录
 #
-#                   @File Name    : main.py
+#                   @File Name    : login.py
 #
 #                   @Programmer   : autofelix
 #
@@ -29,11 +29,6 @@ pyautogui.PAUSE = 0.5
 
 logging.basicConfig(level = logging.INFO,format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
-
-"""
-微信公众号 JackCui-AI
-更多精彩教程、源码尽在微信公众号
-"""
 
 class taobao():
     def __init__(self):
