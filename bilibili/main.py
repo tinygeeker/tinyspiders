@@ -5,21 +5,20 @@
 #                   CONFIDENTIAL --- CUSTOM STUDIOS
 #-------------------------------------------------------------------
 #
-#                   @Project Name : 获取可用代理助手
+#                   @Project Name : 哔哩哔哩视频下载
 #
 #                   @File Name    : main.py
 #
 #                   @Programmer   : autofelix
 #
-#                   @Start Date   : 2022/01/09 13:14
+#                   @Start Date   : 2022/01/15 13:14
 #
-#                   @Last Update  : 2022/01/09 13:14
+#                   @Last Update  : 2022/01/15 13:14
 #
 #-------------------------------------------------------------------
 '''
 
-import requests, json, re, sys, os, urllib, argparse, time
-from urllib.request import urlretrieve
+import requests, json, re, sys, os, argparse, time
 from contextlib import closing
 from urllib import parse
 import xml2ass
