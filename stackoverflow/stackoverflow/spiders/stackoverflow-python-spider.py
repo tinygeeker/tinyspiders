@@ -11,7 +11,7 @@ class StackoverflowPythonSpider(scrapy.Spider):
 
         for page in range(1, 84322):
             urls.append(_url.format(page))
-
+            
         for url in urls:
             yield scrapy.Request(url=url, callback=self.parse)
 
