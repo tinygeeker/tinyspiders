@@ -5,7 +5,7 @@
 #                   CONFIDENTIAL --- CUSTOM STUDIOS
 #-------------------------------------------------------------------
 #
-#                   @Project Name : 获取可用代理助手
+#                   @Project Name : 百万英雄答题助手
 #
 #                   @File Name    : main.py
 #
@@ -22,15 +22,6 @@ from lxml import etree
 from bs4 import BeautifulSoup
 import urllib
 import time, re, types, os
-
-
-"""
-代码写的匆忙，本来想再重构下，完善好注释再发，但是比较忙，想想算了，所以自行完善吧！写法很不规范，勿见怪。
-
-作者：  Jack Cui
-Website:http://cuijiahua.com
-注:     本软件仅用于学习交流，请勿用于任何商业用途！
-"""
 
 class BaiWan():
 	def __init__(self):
