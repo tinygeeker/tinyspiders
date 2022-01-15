@@ -5,7 +5,7 @@
 #                   CONFIDENTIAL --- CUSTOM STUDIOS
 #-------------------------------------------------------------------
 #
-#                   @Project Name : 获取可用代理助手
+#                   @Project Name : 抖音App视频下载小助手
 #
 #                   @File Name    : main.py
 #

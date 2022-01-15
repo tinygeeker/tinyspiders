@@ -5,7 +5,7 @@
 #                   CONFIDENTIAL --- CUSTOM STUDIOS
 #-------------------------------------------------------------------
 #
-#                   @Project Name : 获取可用代理助手
+#                   @Project Name : 抖音下载小助手加强版
 #
 #                   @File Name    : main.py
 #
@@ -168,7 +168,6 @@ class DouYin(object):
 		"""
 		print('*' * 100)
 		print('\t\t\t\t抖音App视频下载小助手')
-		print('\t\t作者:Jack Cui')
 		print('*' * 100)
 
 
