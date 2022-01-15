@@ -29,6 +29,7 @@
 - [火车票抢票小助手](https://github.com/autofelix/python-spiders/blob/main/12306_ticket.py)
 - [下载京东商品的晒单图](https://github.com/autofelix/python-spiders/blob/main/jingdong/main.py)
 - [网易云音乐下载](https://github.com/autofelix/python-spiders/blob/main/netease/main.py)
+- [爱奇艺、优酷等实现在线观看以及视频下载](https://github.com/autofelix/python-spiders/blob/main/video_downloader/main.py)
 
 ## 项目贡献
 
