@@ -5,7 +5,7 @@
 #                   CONFIDENTIAL --- CUSTOM STUDIOS
 #-------------------------------------------------------------------
 #
-#                   @Project Name : 获取可用代理助手
+#                   @Project Name : 人脸识别检测接口
 #
 #                   @File Name    : main.py
 #
@@ -23,8 +23,6 @@ import json
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
-%matplotlib inline
- 
  
 beautify_url = "https://api-cn.faceplusplus.com/facepp/v2/beautify"
 # 你创建的应用的 API Key 和 API Secret(也叫 Secret Key)
@@ -48,7 +46,7 @@ remove_eyebrow = 50
 filter_type = ''
  
 # 二进制方式打开图片
-img_name = 'test_1.png'
+img_name = 'picture.png'
 f = open(img_name, 'rb')
 # 转 base64
 img_base64 = base64.b64encode(f.read())
