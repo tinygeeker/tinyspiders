@@ -5,7 +5,7 @@
 #                   CONFIDENTIAL --- CUSTOM STUDIOS
 #-------------------------------------------------------------------
 #
-#                   @Project Name : 获取可用代理助手
+#                   @Project Name : 爱奇艺、优酷等实现在线观看以及视频下载
 #
 #                   @File Name    : main.py
 #
