@@ -5,7 +5,7 @@
 #                   CONFIDENTIAL --- CUSTOM STUDIOS
 #-------------------------------------------------------------------
 #
-#                   @Project Name : 获取可用代理助手
+#                   @Project Name : 表情包下载助手
 #
 #                   @File Name    : main.py
 #
@@ -19,7 +19,6 @@
 '''
 import os
 from time import time
-
 import requests
 from bs4 import BeautifulSoup
 from queue import Queue
