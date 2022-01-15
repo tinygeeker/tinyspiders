@@ -5,7 +5,7 @@
 #                   CONFIDENTIAL --- CUSTOM STUDIOS
 #-------------------------------------------------------------------
 #
-#                   @Project Name : 获取可用代理助手
+#                   @Project Name : 动漫之家动漫下载
 #
 #                   @File Name    : main.py
 #
@@ -24,13 +24,6 @@ from bs4 import BeautifulSoup
 from contextlib import closing
 from tqdm import tqdm
 import time
-
-"""
-    Author:
-        Jack Cui
-    Wechat:
-        https://mp.weixin.qq.com/s/OCWwRVDFNslIuKyiCVUoTA
-"""
 
 # 创建保存目录
 save_dir = '妖神记'
