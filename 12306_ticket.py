@@ -5,24 +5,22 @@
 #                   CONFIDENTIAL --- CUSTOM STUDIOS
 #-------------------------------------------------------------------
 #
-#                   @Project Name : 获取可用代理助手
+#                   @Project Name : 火车票抢票助手
 #
-#                   @File Name    : main.py
+#                   @File Name    : 12306_ticket.py
 #
 #                   @Programmer   : autofelix
 #
-#                   @Start Date   : 2022/01/09 13:14
+#                   @Start Date   : 2022/01/15 13:14
 #
-#                   @Last Update  : 2022/01/09 13:14
+#                   @Last Update  : 2022/01/15 13:14
 #
 #-------------------------------------------------------------------
 '''
-from splinter.browser import Browser
 from time import sleep
-import traceback
-import time, sys
+from splinter.browser import Browser
 
-class huoche(object):
+class ticket(object):
 	driver_name = ''
 	executable_path = ''
 	#用户名，密码
@@ -64,7 +62,19 @@ class huoche(object):
 			else:
 				break
 
-	def start(self):
+	def hello(self):
+		'''
+		This is a welcome speech
+		:return: self
+		'''
+		print('*' * 50)
+		print(' ' * 15 + '火车票抢票助手')
+		print(' ' * 5 + '作者: autofelix  Date: 2022-01-15 13:14')
+		print(' ' * 5 + '主页: https://autofelix.blog.csdn.net')
+		print('*' * 50)
+		return self
+
+	def run(self):
 		self.driver = Browser(driver_name=self.driver_name,executable_path=self.executable_path)
 		self.driver.driver.set_window_size(1400, 1000)
 		self.login()
@@ -135,5 +145,4 @@ class huoche(object):
 			print(e)
 
 if __name__ == '__main__':
-	huoche = huoche()
-	huoche.start()
+	ticket().hello().run()
