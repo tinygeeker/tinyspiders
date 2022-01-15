@@ -5,15 +5,15 @@
 #                   CONFIDENTIAL --- CUSTOM STUDIOS
 #-------------------------------------------------------------------
 #
-#                   @Project Name : 获取可用代理助手
+#                   @Project Name : 下载京东商品的晒单图
 #
 #                   @File Name    : main.py
 #
 #                   @Programmer   : autofelix
 #
-#                   @Start Date   : 2022/01/09 13:14
+#                   @Start Date   : 2022/01/15 13:14
 #
-#                   @Last Update  : 2022/01/09 13:14
+#                   @Last Update  : 2022/01/15 13:14
 #
 #-------------------------------------------------------------------
 '''
@@ -238,3 +238,10 @@ if __name__ == '__main__':
 	parser.add_argument('-n', '--num', help=('the number of goods to download images'), type=int, default=1)
 	args = parser.parse_args()
 	run(args.dir, args.keyword, args.num)
+
+	# 使用说明
+	# python jd.py -k 芒果
+	# 三个参数：
+	# -d	保存图片的路径，默认为fd.py文件所在文件夹
+	# -k	搜索关键词
+	# -n  	下载商品的晒单图个数，即n个商店的晒单图
