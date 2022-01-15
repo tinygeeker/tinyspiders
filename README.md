@@ -26,6 +26,7 @@
 - [获取指定用户的微信数据](https://github.com/autofelix/python-spiders/blob/main/wechat.py)
 - [获取微信公众平台原创文章](https://github.com/autofelix/python-spiders/blob/main/wechat_public_account.py)
 - [破解哔哩哔哩登录滑动验证码](https://github.com/autofelix/python-spiders/blob/main/bilibili_captcha_crack.py)
+- [火车票抢票小助手](https://github.com/autofelix/python-spiders/blob/main/12306_ticket.py)
 
 ## 项目贡献
 
