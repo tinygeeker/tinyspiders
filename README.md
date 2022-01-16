@@ -35,6 +35,7 @@
 - [抖音无水印视频下载](https://github.com/autofelix/python-spiders/blob/main/douyin/main.py)
 - [动漫之家动漫下载](https://github.com/autofelix/python-spiders/blob/main/dmzj/main.py)
 - [人脸识别检测接口](https://github.com/autofelix/python-spiders/blob/main/check_face/main.py)
+- [表情包图片下载助手](https://github.com/autofelix/python-spiders/blob/main/biaoqingbao/main.py)
 
 ## 项目贡献
 
