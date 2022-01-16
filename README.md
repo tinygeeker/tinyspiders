@@ -26,6 +26,7 @@
 - [获取指定用户的微信数据](https://github.com/autofelix/python-spiders/blob/main/wechat.py)
 - [获取微信公众平台原创文章](https://github.com/autofelix/python-spiders/blob/main/wechat_public_account.py)
 - [破解哔哩哔哩登录滑动验证码](https://github.com/autofelix/python-spiders/blob/main/bilibili_captcha_crack.py)
+- [哔哩哔哩视频下载](https://github.com/autofelix/python-spiders/blob/main/bilibili/main.py)
 - [火车票抢票小助手](https://github.com/autofelix/python-spiders/blob/main/12306_ticket.py)
 - [下载京东商品的晒单图](https://github.com/autofelix/python-spiders/blob/main/jingdong/main.py)
 - [网易云音乐下载](https://github.com/autofelix/python-spiders/blob/main/netease/main.py)
@@ -33,7 +34,7 @@
 - [淘宝登录](https://github.com/autofelix/python-spiders/blob/main/taobao/login.py)
 - [抖音无水印视频下载](https://github.com/autofelix/python-spiders/blob/main/douyin/main.py)
 - [动漫之家动漫下载](https://github.com/autofelix/python-spiders/blob/main/dmzj/main.py)
-- [人脸识别检测接口](https://github.com/autofelix/python-spiders/blob/main/dmzj/main.py)
+- [人脸识别检测接口](https://github.com/autofelix/python-spiders/blob/main/check_face/main.py)
 
 ## 项目贡献
 
