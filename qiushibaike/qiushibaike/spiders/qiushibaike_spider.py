@@ -10,7 +10,6 @@ class QiushiSpider(scrapy.Spider):
     # 这里定义一个唯一的名称，用来标识糗事的爬虫，在项目中不能和别的爬虫名称一样，等会会用到这个名称
     name = "qiushibaike"
 
-
     def start_requests(self):
         urls = [
             'https://www.qiushibaike.com/text/page/1/',
