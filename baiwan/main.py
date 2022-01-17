@@ -27,11 +27,23 @@ class BaiWan():
 	def __init__(self):
 		# 百度知道搜索接口
 		self.baidu = 'http://zhidao.baidu.com/search?'
-		# 百万英雄及接口,每个人的接口都不一样，里面包含的手机信息，因此不公布，请自行抓包，有疑问欢迎留言：http://cuijiahua.com/liuyan.html
+		# 百万英雄及接口,每个人的接口都不一样，里面包含的手机信息，因此不公布，请自行抓包
 		self.api = 'https://api-spe-ttl.ixigua.com/xxxxxxx={}'.format(int(time.time()*1000))
 
+	def hello(self):
+		'''
+        This is a welcome speech
+        :return: self
+        '''
+		print('*' * 50)
+		print(' ' * 15 + '百万英雄答题助手')
+		print(' ' * 5 + '作者: autofelix  Date: 2022-01-09 13:14')
+		print(' ' * 5 + '主页: https://autofelix.blog.csdn.net')
+		print('*' * 50)
+		return self
+
 	# 获取答案并解析问题
-	def get_question(self):
+	def run(self):
 		to = True
 		while to:
 			list_dir = os.listdir('./')
@@ -174,5 +186,4 @@ class BaiWan():
 
 
 if __name__ == '__main__':
-	bw = BaiWan()
-	bw.get_question()
+	BaiWan().hello().run()
