@@ -184,6 +184,5 @@ class BaiWan():
 				f.write('最终答案请自行斟酌！\t')
 				f.write('推荐答案：' + sorted(statistics.items(), key=lambda e:e[1], reverse=True)[0][0])
 
-
 if __name__ == '__main__':
 	BaiWan().hello().run()
