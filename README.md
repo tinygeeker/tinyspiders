@@ -1,5 +1,5 @@
 # python-spiders
-🌈Python网络爬虫实战：王者荣耀超清壁纸、抖音无水印视频、M3U8推流视频、正方系统、财务报表、美女帅哥图片、CSDN阅读量、淘宝、京东、网易云、B站、12306、抖音、笔趣阁、漫画小说音乐电影下载等
+🌈Python网络爬虫实战：王者荣耀超清壁纸、抖音无水印视频、M3U8推流视频、正方系统、财务报表、美女帅哥图片、CSDN阅读量、淘宝、京东、网易云、B站、12306、抖音、笔趣阁、漫画小说音乐电影下载等。
 
 <p align="center">
   <img src="https://img.shields.io/badge/python->=3.0-ff69b4.svg" alt="python">
@@ -41,19 +41,19 @@
 
 ## 项目贡献
 
-如果你觉得项目有用, 就请我喝杯奶茶吧 :tropical_drink:
+如果你觉得项目有用，就请我喝杯奶茶吧。 :tropical_drink:
 
 ![donate](https://autofelix.github.io/autofelix/u/sponsor/matrix.jpeg)
 
 ## 加入我们
 
-想学习更多的技术知识, 就关注我的个人公众号吧 :blush:
+想学习更多的技术知识，就关注我的个人公众号吧。 :blush:
 
 ![donate](https://autofelix.github.io/autofelix/u/attention/matrix.jpeg)
 
 ## 个人主页
 
-CSDN博客专家、阿里云专家博主、华为云云享受专家, 欢迎关注 :tropical_drink:
+CSDN博客专家、阿里云专家博主、华为云云享受专家，欢迎关注。 :tropical_drink:
 
 ![donate](https://autofelix.github.io/autofelix/u/follow/matrix.jpeg)
 
