@@ -43,19 +43,7 @@
 
 如果你觉得项目有用，就请我喝杯奶茶吧。 :tropical_drink:
 
-![donate](https://tinygeeker.github.io/tinygeeker/u/sponsor/matrix.jpeg)
-
-## 加入我们
-
-想学习更多的技术知识，就关注我的个人公众号吧。 :blush:
-
-![donate](https://tinygeeker.github.io/tinygeeker/u/attention/matrix.jpeg)
-
-## 个人主页
-
-极客飞兔：CSDN博客专家、阿里云专家博主、华为云云享受专家，欢迎关注。 :tropical_drink:
-
-![donate](https://tinygeeker.github.io/tinygeeker/u/follow/matrix.jpeg)
+![donate](https://tinygeeker.github.io/u/pay/zuhe.jpg)
 
 ## 浏览器支持情况
 
