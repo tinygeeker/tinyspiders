@@ -7,7 +7,7 @@
 #
 #                   @Project Name : 博客之星点赞小助手
 #
-#                   @File Name    : blog_star_like.py
+#                   @File Name    : add_blog_star_upvote.py
 #
 #                   @Programmer   : tinygeeker
 #
