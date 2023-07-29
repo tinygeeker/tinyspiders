@@ -9,7 +9,7 @@
 #
 #                   @File Name    : blog_star_user.py
 #
-#                   @Programmer   : autofelix
+#                   @Programmer   : tinygeeker
 #
 #                   @Start Date   : 2022/01/08 14:42
 #
@@ -36,7 +36,7 @@ class csdn:
             ],
             [sg.Button('导出csv文件', enable_events=True, key='export')],
             [sg.Output(size=(65, 9), key='out', text_color='#15d36a')],
-            [sg.Text('@autofelix：https://autofelix.blog.csdn.net'), ],
+            [sg.Text('@tinygeeker：https://tinygeeker.blog.csdn.net'), ],
         ]
 
     def hello(self):
@@ -46,8 +46,8 @@ class csdn:
         '''
         print('*' * 50)
         print(' ' * 10 + '导出2021博客之星给你点赞的用户')
-        print(' ' * 5 + '作者: autofelix  Date: 2022-01-08 14:42')
-        print(' ' * 5 + '主页: https://autofelix.blog.csdn.net')
+        print(' ' * 5 + '作者: tinygeeker  Date: 2022-01-08 14:42')
+        print(' ' * 5 + '主页: https://tinygeeker.blog.csdn.net')
         print('*' * 50)
         return self
 

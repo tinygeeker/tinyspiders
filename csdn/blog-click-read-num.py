@@ -9,7 +9,7 @@
 #                                                                   
 #                   @File Name    : blog-click-read-num.py
 #                                                                   
-#                   @Programmer   : autofelix                           
+#                   @Programmer   : tinygeeker                           
 #                                                                     
 #                   @Start Date   : 2022/01/05 13:14
 #                                                                   
@@ -45,8 +45,8 @@ class csdn:
         '''
         print('*' * 50)
         print(' ' * 15 + 'csdn线程阅读量点击量阅读量')
-        print(' ' * 5 + '作者: autofelix  Date: 2022-01-05 13:14')
-        print(' ' * 5 + '主页: https://autofelix.blog.csdn.net')
+        print(' ' * 5 + '作者: tinygeeker  Date: 2022-01-05 13:14')
+        print(' ' * 5 + '主页: https://tinygeeker.blog.csdn.net')
         print('*' * 50)
         return self
 
@@ -76,7 +76,7 @@ class csdn:
         '''
         The program entry
         '''
-        blogerUrl = input('请输入博主主页地址：') or 'https://autofelix.blog.csdn.net'
+        blogerUrl = input('请输入博主主页地址：') or 'https://tinygeeker.blog.csdn.net'
         while True:
             t1 = threading.Thread(target=self.start, args=(self.init_driver(), blogerUrl,))
             t2 = threading.Thread(target=self.start, args=(self.init_driver(), blogerUrl,))

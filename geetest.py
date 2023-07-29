@@ -9,7 +9,7 @@
 #
 #                   @File Name    : geetest.py
 #
-#                   @Programmer   : autofelix
+#                   @Programmer   : tinygeeker
 #
 #                   @Start Date   : 2022/01/11 13:14
 #

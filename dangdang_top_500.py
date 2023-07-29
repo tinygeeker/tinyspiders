@@ -9,7 +9,7 @@
 #
 #                   @File Name    : dangdang_top_500.py
 #
-#                   @Programmer   : autofelix
+#                   @Programmer   : tinygeeker
 #
 #                   @Start Date   : 2022/01/09 13:14
 #
@@ -37,8 +37,8 @@ class dangdang:
         '''
         print('*' * 50)
         print(' ' * 10 + '获取当当网五星好评前五百的书籍')
-        print(' ' * 5 + '作者: autofelix  Date: 2022-01-09 13:14')
-        print(' ' * 5 + '主页: https://autofelix.blog.csdn.net')
+        print(' ' * 5 + '作者: tinygeeker  Date: 2022-01-09 13:14')
+        print(' ' * 5 + '主页: https://tinygeeker.blog.csdn.net')
         print('*' * 50)
         return self
 

@@ -9,7 +9,7 @@
 #
 #                   @File Name    : downloader.py
 #
-#                   @Programmer   : autofelix
+#                   @Programmer   : tinygeeker
 #
 #                   @Start Date   : 2022/01/09 13:14
 #
@@ -62,8 +62,8 @@ class ProgressBar(object):
 if __name__ == '__main__':
     print('*' * 50)
     print(' ' * 20 + '文件下载小助手')
-    print(' ' * 5 + '作者: autofelix  Date: 2022-01-09 13:14')
-    print(' ' * 5 + '主页: https://autofelix.blog.csdn.net')
+    print(' ' * 5 + '作者: tinygeeker  Date: 2022-01-09 13:14')
+    print(' ' * 5 + '主页: https://tinygeeker.blog.csdn.net')
     print('*' * 50)
     url  = input('请输入需要下载的文件链接:\n')
     filename = url.split('/')[-1]

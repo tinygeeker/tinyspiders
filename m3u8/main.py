@@ -9,7 +9,7 @@
 #
 #                   @File Name    : main.py
 #
-#                   @Programmer   : autofelix
+#                   @Programmer   : tinygeeker
 #
 #                   @Start Date   : 2022/01/05 13:14
 #
@@ -46,8 +46,8 @@ class M3u8:
         '''
         print('*' * 50)
         print(' ' * 15 + 'm3u8链接下载小助手')
-        print(' ' * 5 + '作者: autofelix  Date: 2022-01-05 13:14')
-        print(' ' * 5 + '主页: https://autofelix.blog.csdn.net')
+        print(' ' * 5 + '作者: tinygeeker  Date: 2022-01-05 13:14')
+        print(' ' * 5 + '主页: https://tinygeeker.blog.csdn.net')
         print(' ' * 12 + '适用于非加密 | 加密链接')
         print('*' * 50)
         return self

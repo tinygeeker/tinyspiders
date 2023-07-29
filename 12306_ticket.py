@@ -9,7 +9,7 @@
 #
 #                   @File Name    : 12306_ticket.py
 #
-#                   @Programmer   : autofelix
+#                   @Programmer   : tinygeeker
 #
 #                   @Start Date   : 2022/01/15 13:14
 #
@@ -69,8 +69,8 @@ class ticket(object):
 		'''
 		print('*' * 50)
 		print(' ' * 15 + '火车票抢票助手')
-		print(' ' * 5 + '作者: autofelix  Date: 2022-01-15 13:14')
-		print(' ' * 5 + '主页: https://autofelix.blog.csdn.net')
+		print(' ' * 5 + '作者: tinygeeker  Date: 2022-01-15 13:14')
+		print(' ' * 5 + '主页: https://tinygeeker.blog.csdn.net')
 		print('*' * 50)
 		return self
 

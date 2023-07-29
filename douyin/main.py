@@ -9,7 +9,7 @@
 #                                                                   
 #                   @File Name    : main.py                      
 #                                                                   
-#                   @Programmer   : autofelix
+#                   @Programmer   : tinygeeker
 #                                                                     
 #                   @Start Date   : 2022/01/10 14:42
 #                                                                   
@@ -49,8 +49,8 @@ class DouYin:
         '''
         print('*' * 50)
         print(' ' * 15 + '抖音下载小助手')
-        print(' ' * 5 + '作者: autofelix  Date: 2022-05-20 13:14')
-        print(' ' * 5 + '主页: https://autofelix.blog.csdn.net')
+        print(' ' * 5 + '作者: tinygeeker  Date: 2022-05-20 13:14')
+        print(' ' * 5 + '主页: https://tinygeeker.blog.csdn.net')
         print(' ' * 15 + '无水印 | 有水印')
         print(' ' * 12 + '输入用户的sec_uid即可')
         print(' ' * 2 + '用浏览器打开用户分享链接，复制参数中sec_uid')

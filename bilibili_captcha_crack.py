@@ -9,7 +9,7 @@
 #
 #                   @File Name    : bilibili_captcha_crack.py
 #
-#                   @Programmer   : autofelix
+#                   @Programmer   : tinygeeker
 #
 #                   @Start Date   : 2022/01/11 13:14
 #
@@ -46,8 +46,8 @@ class bilibili:
         '''
         print('*' * 50)
         print(' ' * 20 + '破解哔哩哔哩登录滑动验证码')
-        print(' ' * 5 + '作者: autofelix  Date: 2022-01-09 13:14')
-        print(' ' * 5 + '主页: https://autofelix.blog.csdn.net')
+        print(' ' * 5 + '作者: tinygeeker  Date: 2022-01-09 13:14')
+        print(' ' * 5 + '主页: https://tinygeeker.blog.csdn.net')
         print('*' * 50)
         return self
 

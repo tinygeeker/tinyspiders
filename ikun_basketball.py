@@ -55,8 +55,8 @@ class basketball:
         '''
         print('*' * 50)
         print(' ' * 10 + '爬取蔡徐坤打篮球相关视频')
-        print(' ' * 5 + '作者: autofelix  Date: 2022-01-10 13:14')
-        print(' ' * 5 + '主页: https://autofelix.blog.csdn.net')
+        print(' ' * 5 + '作者: tinygeeker  Date: 2022-01-10 13:14')
+        print(' ' * 5 + '主页: https://tinygeeker.blog.csdn.net')
         print('*' * 50)
         return self
 

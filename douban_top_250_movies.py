@@ -9,7 +9,7 @@
 #
 #                   @File Name    : douban_top_250_movies.py
 #
-#                   @Programmer   : autofelix
+#                   @Programmer   : tinygeeker
 #
 #                   @Start Date   : 2022/01/10 13:14
 #
@@ -43,8 +43,8 @@ class douban:
         '''
         print('*' * 50)
         print(' ' * 15 + '豆瓣最受欢迎的250部电影')
-        print(' ' * 5 + '作者: autofelix  Date: 2022-01-10 13:14')
-        print(' ' * 5 + '主页: https://autofelix.blog.csdn.net')
+        print(' ' * 5 + '作者: tinygeeker  Date: 2022-01-10 13:14')
+        print(' ' * 5 + '主页: https://tinygeeker.blog.csdn.net')
         print('*' * 50)
         return self
 

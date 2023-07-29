@@ -9,7 +9,7 @@
 #
 #                   @File Name    : main.py
 #
-#                   @Programmer   : autofelix
+#                   @Programmer   : tinygeeker
 #
 #                   @Start Date   : 2022/01/10 13:14
 #
@@ -70,8 +70,8 @@ class financial():
 		'''
 		print('*' * 50)
 		print(' ' * 10 + '上市公司股票财务下载助手')
-		print(' ' * 5 + '作者: autofelix  Date: 2022-01-10 13:14')
-		print(' ' * 5 + '主页: https://autofelix.blog.csdn.net')
+		print(' ' * 5 + '作者: tinygeeker  Date: 2022-01-10 13:14')
+		print(' ' * 5 + '主页: https://tinygeeker.blog.csdn.net')
 		print('*' * 50)
 		return self
 
