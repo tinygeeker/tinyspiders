@@ -55,4 +55,4 @@
 
 [MIT](https://github.com/tinygeeker/python-spiders/blob/main/LICENSE)
 
-Copyright (c) 2021-present tinygeeker
+Copyright (c) 2021-now tinygeeker
